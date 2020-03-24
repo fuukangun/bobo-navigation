@@ -5,7 +5,8 @@
 html{
     font-size:14px;
     color:#333;
-    background: #f4f4f2 url(../img/bg-grey.png);
+    background: url(https://www.liubo.pro/img/bg.jpg);
+    background-attachment: fixed;
 }
 .main{
     width:1000px;
@@ -14,10 +15,10 @@ html{
 .header{
     height:80px;
 }
-.logo{
-    font-size:1.5rem;
+.menu{
     float:left;
-    width:200px;
+    width:176px;
+    font-size:1.5rem;
     text-align: left;
     margin-top: 24px;
     margin-right: 40px;
@@ -81,13 +82,17 @@ html{
     text-decoration: none;
     background-size:cover;
     background-position:center;
-    background:#fff;
+    background:rgba(255,255,255,0.6);
     transition: 0.2s;
     position:relative;
     overflow: hidden;
 }
-.firstitem:hover{
-    background:#eee;
+.firstitem:hover img {
+    top: 15px;
+    transform: scale(1.5);
+}
+.firstitem:hover .firsttitle {
+    opacity: 0;
 }
 .firstitem img{
     width:40px;
@@ -96,11 +101,15 @@ html{
     margin:20px 0 10px 0;
     z-index: 1;
     position: relative;
+    transition: all 0.2s;
+    top:0;
 }
 .firstitem .firsttitle{
     text-decoration: none;
     z-index: 1;
     position: relative;
+    transition: all 0.2s;
+    opacity: 1;
 }
 .firstbgimg{
     position:absolute;
@@ -129,7 +138,7 @@ html{
     flex-wrap:wrap;
     justify-content:space-between;
     padding:1px 15px 15px 15px;
-    background:#fff;
+    background:rgba(255,255,255,0.6);
     margin-top:20px;
     border: solid 1px rgb(231, 231, 231);
 }
@@ -156,7 +165,7 @@ html{
 }
 .thirditem{
     width:310px;
-    background:#fff;
+    background:rgba(255,255,255,0.6);
     margin-top:30px;
     border: solid 1px rgb(231, 231, 231);
 }

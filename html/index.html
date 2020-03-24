@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>bobo的导航</title>
+    <title>Demo导航</title>
     <base target="_blank"/>
     <link rel="stylesheet" href="css/index.css">
     <script src="js/vue.min.js"></script>
     <script src="js/index.js"></script><!-- onload() vue() -->
+    <style>
+        html{
+            background:url(http://guanjun.fun/img/background.jpg);
+        }
+    </style>
 </head>
 <body>
     <div class="main">
@@ -21,14 +26,14 @@
             <div class="third"><div v-for="item in 3" class="thirditem"><div class="thirdtitle"></div><hr><div class="thirdval"><a class="thirdlink"v-for="i in 9"></a></div></div></div>
         </div>
         <!--以下为基本内容-->
-        <div :class="{'display':display}" class="header">
-            <div class="logo">bobo的导航</div>
+<!--         <div :class="{'display':display}" class="header">
+            <div class="logo">Demo导航</div>
             <div class="search">
                 <input type="text" class="searchbar" placeholder="搜索一下">
                 <div class="searchbutton"></div>
             </div>
-        </div>
-        <div :class="{'display':display}" class="title">主要站点</div>
+        </div> -->
+        <div :class="{'display':display}" class="title">常用站点</div>
         <div :class="{'display':display}" class="first">
             <!-- foreach firstitem -->
             <a  v-for="item in first" 
@@ -70,6 +75,10 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div id="gongan" style="text-align: center;">
+    	<img style="vertical-align: middle;height:20px;width:20px;margin-bottom:3px;margin-right:5px" src="https://csdnimg.cn/pubfooter/images/gongan.png">
+    	公安备案号 浙ICP备19040406号-1
     </div>
 </body>
 </html>
