@@ -1,5 +1,10 @@
 var nav_data={};
 var onloadnav=function(){
+    nav.searchDisplay=nav_data.searchDisplay;
+    nav.firstTitleDisplay=nav_data.firstTitleDisplay;
+    nav.firstDisplay=nav_data.firstDisplay;
+    nav.secondDisplay=nav_data.secondDisplay;
+    nav.thirdDisplay=nav_data.thirdDisplay;
     nav.display=nav_data.display;
     nav.first=nav_data.first;
     nav.second=nav_data.second;
@@ -56,6 +61,11 @@ onload=function(){
     window.nav=new Vue({
         'el':'.main',
         'data':{
+            searchDisplay:false,
+            firstTitleDisplay:false,
+            firstDisplay:false,
+            secondDisplay:false,
+            thirdDisplay:false,
             display:false,
             first:[],
             second:[],
