@@ -67,6 +67,14 @@
                 ["摩天轮","https://www.moretickets.com",null],
                 ["票牛","http://www.piaoniu.com",null]
             ]
+        },{
+        	"name":"官方",
+        	"val":[
+        		["浙江信管局","http://zj.beian.miit.gov.cn/state/outPortal/loginPortal.action",null],
+        		["国家药监局","http://www.nmpa.gov.cn/WS04/CL2042/",null],
+        		["国家司法部","http://www.chinalaw.gov.cn",null],
+        		["中国电影数据","https://zgdypw.cn/#/film.html",null]
+        	]
         }
     ]
 }
